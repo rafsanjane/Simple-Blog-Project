@@ -152,30 +152,30 @@
             <!--//container-->
         </section>
 
-        @foreach ($posts as $post)
+
 
         <section class="blog-list px-3 py-5 p-md-5">
             <div class="container">
                 <div class="row">
+                    @foreach ($posts as $post)
                     <div class="col-md-4 mb-3">
                         <div class="card blog-post-card">
                             <img class="card-img-top" src="assets/images/blog/blog-post-thumb-card-1.jpg" alt="image">
                             <div class="card-body">
-                                <h5 class="card-title"><a class="theme-link" href="blog-post.php">{{ $post->title }}</a>
+                                <h5 class="card-title"><a class="theme-link"
+                                        href="posts/{{ $post->id }}">{{ $post->title }}</a>
                                 </h5>
                                 <p class="card-text">{{ $post->content }}</p>
-                                <p class="mb-0"><a class="text-link" href="blog-post.php">Read more &rarr;</a></p>
-
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Published 2 days ago</small>
+                                <p class="mb-0"><a class="text-link" href="posts/{{ $post->id }}">Read more &rarr;</a>
+                                </p>
                             </div>
                         </div>
                         <!--//card-->
                     </div>
+                    @endforeach
                 </div>
                 <!--//row-->
-                @endforeach
+
 
                 <nav class="blog-nav nav nav-justified my-5">
                     <a class="nav-link-prev nav-item nav-link d-none rounded-left" href="#">Previous<i
