@@ -21,11 +21,11 @@
     <script defer src="assets/fontawesome/js/all.js"></script>
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="assets/plugins/tiny-slider/tiny-slider.css">
+    <link rel="stylesheet" href="{{asset('assets/plugins/tiny-slider/tiny-slider.css')}}">
 
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
-    <link href="assets/css/heroes.css" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" href="{{asset('assets/css/theme.css')}}">
+    <link href="{{asset('assets/css/heroes.css')}}" rel="stylesheet">
     <script src="{{asset('js/axios.min.js')}}"></script>
 
 </head>
@@ -122,8 +122,9 @@
     <!--//configure-panel-->
 
     <!-- Main Javascript -->
-    <script src="assets/plugins/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{asset('js/main.js')}}"></script>
+    <script src="{{asset('assets/plugins/popper.min.js')}}"></script>
+    <script src="{{asset('assets/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
 
     <script src="assets/plugins/tiny-slider/min/tiny-slider.js"></script>
     <script src="assets/js/testimonials.js"></script>
